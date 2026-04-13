@@ -38,3 +38,30 @@
         --color-accent-foreground: var(--color-white);
     }
 }
+
+
+[data-flux-sidebar] {
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+button,
+[data-flux-switch],
+[data-flux-button],
+[data-flux-sidebar-group] {
+    cursor: pointer !important;
+}
+
+#nprogress .bar {
+    background: var(--color-accent) !important;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px var(--color-accent), 0 0 5px var(--color-accent) !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: var(--color-accent) !important;
+    border-left-color: var(--color-accent) !important;
+}
